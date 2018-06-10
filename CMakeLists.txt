@@ -8,7 +8,7 @@ find_package(SDL2 REQUIRED)
 set(CMAKE_CXX_STANDARD 11)
 
 include_directories(${SDL2_INCLUDE_DIR})
-add_executable(Particle main.cpp Screen.cpp Screen.h)
+add_executable(Particle main.cpp Screen.cpp Screen.h Particle.cpp Particle.h Swarm.cpp Swarm.h)
 
 if(WIN32)
     target_link_libraries(Particle ${SDL2_LIBRARY} -lmingw32 -lSDL2main -lSDL2 -mwindows)
