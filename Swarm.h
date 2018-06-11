@@ -9,7 +9,7 @@
 
 class Swarm {
 public:
-    const static int NPARTICLES = 5000;
+    const static int NPARTICLES = 1000;
 private:
     Particle* m_pParticles;
 public:
@@ -17,6 +17,7 @@ public:
     virtual ~Swarm();
 
     const Particle* const getParticles() { return m_pParticles; };
+    void update();
 };
 
 #endif //PARTICLE_SWARM_H
